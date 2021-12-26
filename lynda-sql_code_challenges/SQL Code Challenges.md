@@ -6,6 +6,22 @@ Browser to use: [DB Browser for SQLite (sqlitebrowser.org)](https://sqlitebrowse
 
 
 
+## Order of an SQL query
+
+```sql
+SELECT DISTINCT column, AGG_FUNC(*column_or_expression*),… 
+	FROM mytable    
+	JOIN another_table      
+		ON mytable.column = another_table.column    
+	WHERE *constraint_expression*    
+	GROUP BY column    
+	HAVING *constraint_expression*    
+	ORDER BY *column* ASC/DESC    
+	LIMIT *count* OFFSET *COUNT*;
+```
+
+
+
 ## Challenge 1
 
 Create a list of all customers with:
@@ -151,3 +167,150 @@ Notes:
 * With sqlite, you need the VALUES keyword, which you may not need in other forms of SQL.
 * After VALUES, parentheses are needed, and any SELECT statements need to be in parentheses, too.
 
+**Git commit**
+
+## Challenge 8
+
+Search for a reservation by name without knowing the exact spelling.
+
+"Stevenson" or something like it and four people in reservation. 
+
+```sql
+SELECT C.FirstName, C.LastName, R.ReservationID, R.Date  
+FROM Customers AS C
+JOIN Reservations AS R 
+ON C.CustomerID = R.CustomerID
+WHERE C.LastName like "Ste%"
+	AND R.PartySize = 4;
+```
+
+
+
+This still gives you several reservations. But if you know today's date (which they didn't say in the video), you can find the right one. 
+
+## Challenge 9
+
+Create a reservation 
+
+* Sam McAdams - 14 July 2020, 6 pm, 5 people
+* smac@rouxacademy.com / (555) 555-1212
+
+
+
+He's not already a customer so add him into the database.
+
+```sql
+INSERT INTO Customers (FirstName, LastName, Email, Phone)
+VALUES ("Sam", "McAdams", "smac@rouxacademy.com", "(555) 555-1212");
+```
+
+Then add the reservation
+
+```sql
+INSERT INTO Reservations (CustomerID, Date, PartySize)
+VALUES (
+	(SELECT CustomerID FROM Customers WHERE Email = "smac@rouxacademy.com"),
+	"2020-07-14 18:00:00",
+	5
+    );
+```
+
+It works, but when I double checked, I found the Reservation table wasn't set up with a primary key or to autoincrement it.  
+
+**Git commit**
+
+## Challenge 10
+
+**Create order:**
+
+- Loretta Hundey
+- 6939 Elka Place
+- Order:
+  - House Salad,
+  - Mini Cheeseburgers
+  - Tropical Blue Smoothie
+
+**Challenge**
+
+- Create an order
+- Find the customer
+- Create the order record
+- Add the items to the order
+- Find the total cost 
+
+
+
+Their way is confusing, so I'm changing up the sequence. 
+
+### Find the customer
+
+```sql
+SELECT * FROM Customers
+WHERE Address = "6939 Elka Place";
+```
+
+Her CustomerID is 70.
+
+### Create the order
+
+Does not auto-increment so I'm adding the ID as 1001. 
+
+```sql
+INSERT INTO Orders (OrderID, CustomerID, OrderDate)
+VALUES (1001, 70, "2021-12-25 09:00:00");
+```
+
+### Add items to the order
+
+```sql
+SELECT DishID, Name, Price FROM Dishes
+WHERE 
+	Name = "House Salad" or 
+	name = "Mini Cheeseburgers" or 
+	name="Tropical Blue Smoothie";
+```
+
+You get IDs 4, 7, 20. 
+
+
+
+Checking OrdersDishesID, it doesn't auto-increment and last one is 4021.
+
+```sql
+INSERT INTO OrdersDishes (OrdersDishesID, OrderID, DishID)
+VALUES (4022, 1001, 4);
+INSERT INTO OrdersDishes (OrdersDishesID, OrderID, DishID)
+VALUES (4023, 1001, 7);
+INSERT INTO OrdersDishes (OrdersDishesID, OrderID, DishID)
+VALUES (4024, 1001, 20);
+```
+
+### Find the Cost
+
+```sql
+SELECT SUM(Dishes.Price) FROM Dishes
+JOIN OrdersDishes 
+ON Dishes.DishID = OrdersDishes.DishID
+WHERE OrdersDishes.OrderID = 1001;
+```
+
+
+
+## Challenge 11
+
+Update Cleo's favorite dish as the Quinoa Salmon Salad. (It's currently something else. Changing it from 14 to 9). 
+
+```sql
+UPDATE Customers
+SET FavoriteDish = 
+	(SELECT DishID FROM Dishes WHERE Name like "Quinoa%")
+WHERE FirstName = "Cleo";
+```
+
+
+
+
+
+## Challenge 12
+
+Generate a list of the five customers who have placed the most to-go orders.
