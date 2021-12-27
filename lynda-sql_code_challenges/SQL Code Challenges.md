@@ -6,7 +6,7 @@ Browser to use: [DB Browser for SQLite (sqlitebrowser.org)](https://sqlitebrowse
 
 
 
-## Order of an SQL query
+# Order of an SQL query
 
 ```sql
 SELECT DISTINCT column, AGG_FUNC(*column_or_expression*),… 
@@ -19,6 +19,10 @@ SELECT DISTINCT column, AGG_FUNC(*column_or_expression*),…
 	ORDER BY *column* ASC/DESC    
 	LIMIT *count* OFFSET *COUNT*;
 ```
+
+
+
+# Restaurant Datasets
 
 
 
@@ -314,3 +318,140 @@ WHERE FirstName = "Cleo";
 ## Challenge 12
 
 Generate a list of the five customers who have placed the most to-go orders.
+
+- Number of orders
+- First, last names, email
+- Sorted by number of orders
+
+Use both
+
+* customers table
+* orders table
+
+```sqlite
+SELECT C.FirstName, C.LastName, C.Email, count(O.OrderID) as total
+	FROM Orders as O
+	JOIN Customers as C
+		ON O.CustomerID = C.CustomerID
+	GROUP BY O.CustomerID
+	ORDER BY total DESC
+	LIMIT 5;
+```
+
+
+
+# Library Datasets
+
+## Challenge 13
+
+Find the number of available copies of Dracula.
+
+```sql
+SELECT 
+	(SELECT count(Books.Title) From Books WHERE Books.Title = "Dracula")
+-
+	(SELECT count(Books.Title)
+		FROM Loans
+		JOIN Books
+			ON Books.BookID = Loans.BookID
+		WHERE  Books.Title = "Dracula" AND Loans.ReturnedDate IS NULL)
+AS AvailableBooks;
+```
+
+
+
+## Challenge 14
+
+Add these to the book table:
+
+* Dracula
+* Bram Stoker
+* Year: 1897
+* New ID: 4819277482
+
+
+
+* Gulliver's Travels
+* Jonathan Swift
+* Year: 1729
+* New ID: 4899254401
+
+
+
+```sql
+INSERT INTO Books (Title, Author, Published, Barcode)
+VALUES 
+	("Gulliver's Travels", "Jonathan Swift", 1789, 4899254401),
+	("Dracula", "Bram Stoker", 1897, 4819277482);
+```
+
+Note that you can use the `VALUES` statement more than once. 
+
+## Challenge 15
+
+Check out these books:
+
+* The Picture of Dorian Gray, 2855934983
+* Great Expectations, 4043822646
+
+To:
+
+- Jack Vaan, jvaan@wisdompets.com
+- August 25, 2020
+- September 8, 2020
+
+
+
+*From table lookups:*
+
+Those BookIDs are 93 (Great Expectations) and 11 (Dorian Gray).
+
+Patron ID is 50
+
+```sql
+INSERT INTO Loans (BookID, PatronID, LoanDate, DueDate)
+VALUES
+	(93, 50, "2020-08-25", "2020-09-09"),
+	(11, 50, "2020-08-25", "2020-09-09");
+```
+
+
+
+
+
+## Challenge 16
+
+Generate report of books due back on July 13, 2020, with patron contact info.
+
+```sql
+SELECT DueDate, Books.Title, Books.Author, Patrons.FirstName, Patrons.LastName, Patrons.Email 
+	FROM Loans
+	JOIN Books
+		ON Books.BookID = Loans.BookID
+	JOIN Patrons
+		ON Patrons.PatronID = Loans.PatronID
+	WHERE DueDate = "2020-07-13";
+```
+
+
+
+## Challenge 17
+
+Mark as returned books with barcodes:
+
+- 6435968624
+- 5677520613
+- 8730298424
+
+...on July 5, 2020.
+
+```sql
+UPDATE Loans
+	SET ReturnedDate = "2020-07-05"
+	WHERE BookID=(SELECT BookID FROM Books WHERE Barcode = "6435968624") 
+		AND ReturnedDate is NULL;
+```
+
+And repeat for the following...
+
+**Git commit**
