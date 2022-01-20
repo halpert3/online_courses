@@ -455,3 +455,61 @@ UPDATE Loans
 And repeat for the following...
 
 **Git commit**
+
+## Challenge 18
+
+Create a report of the 10 patrons who have checked out the fewest books.
+
+```sql
+SELECT P.FirstName, P.LastName, COUNT(L.LoanID) AS LoanCount
+	FROM Patrons as P
+	JOIN Loans as L
+		ON P.PatronID = L.PatronID
+	GROUP BY 
+		P.FirstName, P.LastName
+	ORDER BY LoanCount ASC
+	LIMIT 10;
+```
+
+## Challenge 19
+
+Create a list of books from the 1890's that are not checked out.
+
+```sql
+SELECT B.BookID, B.Title, B.Published From Books AS B
+	JOIN Loans AS L
+		ON L.BookID = B.BookID
+	WHERE B.Published > 1889 AND B.Published < 1900
+		AND L.ReturnedDate IS NOT NULL
+	GROUP BY B.BookID
+	ORDER BY B.Title;
+```
+
+## Challenge 20
+
+Create a report showing how many books were published each year, with the years with the most books published at the top.
+
+```sql
+SELECT Title, count(DISTINCT(Title)) AS NumberPublished, Published from Books
+	GROUP BY Published
+	ORDER BY NumberPublished DESC;
+```
+
+
+
+Create a report showing the five most popular books checked out. 
+
+```sql
+SELECT B.Title, Count(L.LoanDate) AS TimesCheckedOut
+	FROM Loans AS L
+	JOIN Books AS B
+		ON B.BookID = L.BookID
+	GROUP BY B.Title
+	ORDER BY TimesCheckedOut DESC
+	LIMIT 5;
+```
+
+
+
+ 
+
