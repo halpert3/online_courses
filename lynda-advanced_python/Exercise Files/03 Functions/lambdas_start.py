@@ -14,9 +14,16 @@ def main():
     ftemps = [32, 65, 100, 212]
 
     # TODO: Use regular functions to convert temps
+    
+    fahrlist = list(map(FahrenheitToCelsisus, ftemps))
+    print([round(x, 1) for x in fahrlist])
+    print([round(f, 3) for f in list(map(FahrenheitToCelsisus, ftemps))])
+    print(list(map(CelsisusToFahrenheit, ctemps)))
 
     # TODO: Use lambdas to accomplish the same thing
-
+    print('------------------')
+    print(list(map(lambda t: (t-32) * 5/9, ftemps)))
+    print(list(map(lambda temp: (temp * 9/5) + 32, ctemps)))
 
 if __name__ == "__main__":
     main()
