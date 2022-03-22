@@ -1,0 +1,215 @@
+﻿Contact name,Sales region,Company name,Product name,SKU_ID,Sales amount,Order date,Call total,Order,Rank
+Nancy Freehafer,South,Company_Z,Apples,P-A1,20000,11/27/2020,7,11,175
+Mariya Sergienko,North,Company_D,Apples,P-A1,2189.12,1/20/2021,10,19,162
+Mariya Sergienko,North,Company_D,Apples,P-A1,6266.18,4/22/2021,1,29,74
+,,,,,,,,,
+Michael Neipper Smith,North,Company_L,Apples,P-A1,6879.17,3/1/2021,4,31,61
+Nancy Freehafer,South,Company_Z,Apples,P-A1,1182.13,4/5/2021,6,47,176
+Mariya Sergienko,North,Company_D,Apples,P-A1,9197.19,1/20/2021,13,55,17
+Mariya Sergienko,North,Company_CC,Apples,P-A1,6881.13,6/5/2021,18,77,60
+Anne Hellung-Larsen,North,Company_F,Apples,P-A1,5464.11,6/23/2021,15,84,94
+Mariya Sergienko,North,Company_CC,Apples,P-A1,652.14,9/6/2021,21,106,190
+Mariya Sergienko,North,Company_D,Apples,P-A1,9812.15,4/22/2021,6,113,6
+Mariya Sergienko,North,Company_CC,Apples,P-A1,5620.13,10/5/2021,15,120,90
+,,,,,,,,,
+Laura Giussani,East,Company_C,Apples,P-A1,588.12,10/22/2021,19,129,192
+Jan Kotas,South,Company_H,Apples,P-A1,30000.05,11/24/2021,1,138,116
+Jan Kotas,South,Company_H,Apples,P-A1,500,12/5/2021,18,142,92
+,,,,,,,,,
+Robert Zare,East,Company_J,Apples,P-A1,7697.19,3/24/2021,14,147,45
+Michael Neipper Smith,North,Company_L,Apples,P-A1,6222.14,12/23/2021,9,152,76
+Robert Zare,East,Company_J,Apples,P-A1,6810.16,4/11/2021,3,161,64
+,,,,,,,,,
+Laura Giussani,East,Company_C,Apples,P-A1,8669.19,3/17/2021,7,179,25
+Nancy Freehafer,South,Company_Z,Apples,P-A1,3943.19,4/5/2021,8,193,126
+Robert Zare,East,Company_J,Apples,P-A1,7267.16,8/10/2021,10,201,50
+Mariya Sergienko,North,Company_D,Bananas,P-B2,382.19,3/24/2020,14,3,197
+Mariya Sergienko,North,Company_D,Bananas,P-B2,382.12,9/24/2021,18,39,198
+Jan Kotas,South,Company_H,Bananas,P-B2,3366.11,4/30/2021,16,60,139
+Anne Hellung-Larsen,North,Company_I,Bananas,P-B2,25000.18,5/4/2021,15,61,4
+Laura Giussani,East,Company_C,Bananas,P-B2,8004.1,5/9/2021,21,66,39
+Mariya Sergienko,North,Company_D,Bananas,P-B2,4897.13,7/15/2021,7,70,114
+Mariya Sergienko,North,Company_D,Bananas,P-B2,6594.1,7/22/2021,4,71,69
+Mariya Sergienko,North,Company_D,Bananas,P-B2,8602.12,8/10/2021,7,72,27
+Nancy Freehafer,South,Company_Z,Bananas,P-B2,3684.11,6/5/2021,4,78,130
+Mariya Sergienko,North,Company_D,Bananas,P-B2,8009.19,10/22/2021,10,87,38
+Jan Kotas,South,Company_AA,Bananas,P-B2,3410.11,7/15/2021,20,88,137
+Mariya Sergienko,North,Company_D,Bananas,P-B2,8882.12,10/25/2021,16,89,20
+Anne Hellung-Larsen,North,Company_F,Bananas,P-B2,8608.19,7/20/2021,19,90,26
+Mariya Sergienko,North,Company_BB,Bananas,P-B2,7397.16,7/20/2021,2,91,48
+Anne Hellung-Larsen,North,Company_F,Bananas,P-B2,6930.12,8/11/2021,20,99,59
+Mariya Sergienko,North,Company_BB,Bananas,P-B2,4210.2,10/5/2021,13,119,124
+Mariya Sergienko,North,Company_D,Bananas,P-B2,5720.17,4/22/2021,20,122,88
+Mariya Sergienko,North,Company_D,Bananas,P-B2,6267.12,7/9/2021,11,124,73
+Nancy Freehafer,South,Company_Z,Bananas,P-B2,5285.13,10/17/2021,8,128,101
+Mariya Sergienko,North,Company_D,Bananas,P-B2,4632.1,9/24/2021,15,130,120
+Mariya Sergienko,North,Company_D,Bananas,P-B2,4985.13,10/8/2021,18,131,113
+Anne Hellung-Larsen,North,Company_F,Bananas,P-B2,9082.11,11/24/2021,7,136,18
+Anne Hellung-Larsen,North,Company_F,Bananas,P-B2,5815.17,11/24/2021,6,137,85
+Robert Zare,East,Company_J,Bananas,P-B2,5083.11,3/24/2021,11,156,109
+Anne Hellung-Larsen,North,Company_F,Bananas,P-B2,3417.12,2/21/2021,2,172,136
+Michael Neipper Smith,North,Company_L,Bananas,P-B2,6967.18,3/4/2021,14,174,56
+Robert Zare,East,Company_J,Bananas,P-B2,7785.13,5/30/2021,14,183,41
+Anne Hellung-Larsen,North,Company_I,Bananas,P-B2,559.18,4/5/2021,7,188,193
+Test entry,Test entry,Test entry,Test entry,Test entry,1.1,4/5/2021,Test entry,Test entry,Test entry
+Test entry,Test entry,Test entry,Test entry,Test entry,1.1,4/5/2021,Test entry,Test entry,Test entry
+Jan Kotas,South,Company_H,Bananas,P-B2,4691.14,4/30/2021,5,207,118
+Anne Hellung-Larsen,North,Company_F,Broccoli,P-BC1,1807.15,1/7/2021,14,15,167
+Mariya Sergienko,North,Company_D,Broccoli,P-BC1,5605.16,1/20/2021,1,16,91
+Jan Kotas,South,Company_AA,Broccoli,P-BC1,9379.15,2/7/2021,20,26,15
+Nancy Freehafer,South,Company_Z,Broccoli,P-BC1,3837.17,2/7/2021,3,27,127
+Mariya Sergienko,North,Company_D,Broccoli,P-BC1,1802.16,2/6/2021,5,56,168
+Mariya Sergienko,North,Company_D,Broccoli,P-BC1,3527.1,4/22/2021,18,57,132
+Mariya Sergienko,North,Company_D,Broccoli,P-BC1,4829.18,12/5/2021,2,92,117
+Laura Giussani,East,Company_C,Broccoli,P-BC1,6155.16,9/2/2021,20,104,80
+Mariya Sergienko,North,Company_D,Broccoli,P-BC1,7044.19,1/20/2021,19,105,54
+Mariya Sergienko,North,Company_BB,Broccoli,P-BC1,3435.19,9/24/2021,11,112,134
+Michael Neipper Smith,North,Company_L,Broccoli,P-BC1,1682.11,10/5/2021,20,121,169
+Jan Kotas,South,Company_AA,Broccoli,P-BC1,2144.16,10/8/2021,1,127,163
+Laura Giussani,East,Company_C,Broccoli,P-BC1,8680.1,11/15/2021,12,135,24
+Jan Kotas,South,Company_AA,Broccoli,P-BC1,9379.18,3/17/2021,1,178,13
+Robert Zare,East,Company_J,Broccoli,P-BC1,7178.15,9/2/2021,18,203,52
+Robert Zare,East,Company_J,Broccoli,P-BC1,3576.16,9/19/2021,18,204,131
+Mariya Sergienko,North,Company_D,Celery,P-C2,2740.14,5/18/2020,5,5,152
+Jan Kotas,South,Company_H,Celery,P-C2,1483.12,7/8/2020,8,7,172
+Jan Kotas,South,Company_H,Celery,P-C2,703.14,8/5/2020,14,8,185
+Michael Neipper Smith,North,Company_L,Celery,P-C2,220.18,2/3/2021,21,23,202
+Mariya Sergienko,North,Company_D,Celery,P-C2,5075.17,4/22/2021,13,25,110
+Mariya Sergienko,North,Company_CC,Celery,P-C2,1089.13,2/10/2021,1,28,178
+Anne Hellung-Larsen,North,Company_F,Celery,P-C2,6482.15,3/6/2021,18,32,71
+Mariya Sergienko,North,Company_D,Celery,P-C2,2740.11,12/5/2021,18,41,153
+Jan Kotas,South,Company_H,Celery,P-C2,1483.13,4/5/2021,8,43,171
+Jan Kotas,South,Company_H,Celery,P-C2,703.1,4/5/2021,17,44,186
+Laura Giussani,East,Company_C,Celery,P-C2,5006.15,4/25/2021,9,59,112
+Nancy Freehafer,South,Company_K,Celery,P-C2,3147.13,5/24/2021,13,68,146
+Jan Kotas,South,Company_H,Celery,P-C2,7251.16,6/5/2021,18,76,51
+Anne Hellung-Larsen,North,Company_F,Celery,P-C2,2383.11,6/8/2021,3,80,159
+Mariya Sergienko,North,Company_D,Celery,P-C2,8686.17,1/20/2021,7,94,23
+Mariya Sergienko,North,Company_BB,Celery,P-C2,409.18,8/23/2021,12,102,196
+Mariya Sergienko,North,Company_BB,Celery,P-C2,5017.12,9/10/2021,13,107,111
+Nancy Freehafer,South,Company_Z,Celery,P-C2,6986.2,9/13/2021,10,108,55
+Jan Kotas,South,Company_AA,Celery,P-C2,1996.15,10/5/2021,4,117,164
+Mariya Sergienko,North,Company_BB,Celery,P-C2,5247.12,11/24/2021,1,139,103
+Robert Zare,East,Company_J,Celery,P-C2,2452.13,2/13/2021,20,145,158
+Laura Giussani,East,Company_C,Celery,P-C2,4500.1,12/27/2021,4,153,121
+Laura Giussani,East,Company_C,Celery,P-C2,3183.16,1/4/2021,6,154,145
+Jan Kotas,South,Company_H,Celery,P-C2,5482.12,1/30/2021,16,165,93
+Robert Zare,East,Company_J,Celery,P-C2,8157.15,4/11/2021,1,167,34
+Mariya Sergienko,North,Company_CC,Celery,P-C2,2957.16,2/10/2021,21,169,148
+Anne Hellung-Larsen,North,Company_F,Celery,P-C2,6939.17,3/6/2021,18,175,58
+Jan Kotas,South,Company_H,Celery,P-C2,3355.17,3/22/2021,13,181,140
+Robert Zare,East,Company_J,Celery,P-C2,6501.17,7/13/2021,20,185,70
+Anne Hellung-Larsen,North,Company_F,Celery,P-C2,35000.14,4/3/2021,14,186,2
+Jan Kotas,South,Company_H,Celery,P-C2,4641.17,4/5/2021,21,190,119
+n/a,n/a,n/a,n/a,n/a,1.1,4/5/2021,n/a,n/a,n/a
+n/a,n/a,n/a,n/a,n/a,1.1,4/5/2021,n/a,n/a,n/a
+Laura Giussani,East,Company_C,Celery,P-C2,9618.11,4/25/2021,6,206,10
+Anne Hellung-Larsen,North,Company_I,Coffee,P-CO1,681.13,6/1/2020,18,6,188
+Michael Neipper Smith,North,Company_L,Coffee,P-CO1,5964.19,10/23/2020,6,10,82
+Nancy Freehafer,South,Company_Z,Coffee,P-CO1,592.11,1/6/2021,15,14,191
+Mariya Sergienko,North,Company_D,Coffee,P-CO1,7869.2,2/6/2021,21,20,40
+Michael Neipper Smith,North,Company_L,Coffee,P-CO1,8296.18,1/22/2021,16,22,31
+Nancy Freehafer,South,Company_Z,Coffee,P-CO1,6777.13,3/14/2021,12,33,65
+Anne Hellung-Larsen,North,Company_F,Coffee,P-CO1,1201.13,3/16/2021,21,34,174
+Laura Giussani,East,Company_C,Coffee,P-CO1,34.17,3/17/2021,4,35,207
+Anne Hellung-Larsen,North,Company_I,Coffee,P-CO1,681.16,4/5/2021,1,42,187
+Michael Neipper Smith,North,Company_L,Coffee,P-CO1,5964.13,4/5/2021,1,46,83
+Nancy Freehafer,South,Company_Z,Coffee,P-CO1,7782.18,4/5/2021,4,49,42
+Mariya Sergienko,North,Company_BB,Coffee,P-CO1,5388.12,4/7/2021,1,51,98
+Mariya Sergienko,North,Company_D,Coffee,P-CO1,6703.14,1/20/2021,15,53,67
+Mariya Sergienko,North,Company_D,Coffee,P-CO1,6249.11,1/20/2021,6,54,75
+Laura Giussani,East,Company_C,Coffee,P-CO1,9466.18,4/25/2021,6,58,12
+Nancy Freehafer,South,Company_A,Coffee,P-CO1,237.18,5/24/2021,1,67,201
+Mariya Sergienko,North,Company_D,Coffee,P-CO1,1051.11,5/6/2021,3,69,179
+Mariya Sergienko,North,Company_BB,Coffee,P-CO1,9700.11,6/7/2021,21,79,9
+Anne Hellung-Larsen,North,Company_F,Coffee,P-CO1,2553.12,7/30/2021,15,96,155
+Jan Kotas,South,Company_AA,Coffee,P-CO1,2490.1,8/6/2021,17,97,156
+Mariya Sergienko,North,Company_D,Coffee,P-CO1,2458.11,1/20/2021,7,98,157
+Michael Neipper Smith,North,Company_L,Coffee,P-CO1,7409.19,8/22/2021,1,101,47
+Mariya Sergienko,North,Company_D,Coffee,P-CO1,6717.2,2/6/2021,2,110,66
+Jan Kotas,South,Company_H,Coffee,P-CO1,4097.11,9/24/2021,21,111,125
+Michael Neipper Smith,North,Company_L,Coffee,P-CO1,6398.11,9/24/2021,21,114,72
+Laura Giussani,East,Company_C,Coffee,P-CO1,6164.11,10/3/2021,21,115,79
+Mariya Sergienko,North,Company_CC,Coffee,P-CO1,142.18,10/7/2021,13,125,205
+Mariya Sergienko,North,Company_D,Coffee,P-CO1,1253.15,11/24/2021,4,141,173
+Mariya Sergienko,North,Company_D,Coffee,P-CO1,1170.15,12/7/2021,4,143,177
+Mariya Sergienko,North,Company_BB,Coffee,P-CO1,467.16,12/8/2021,14,148,194
+Jan Kotas,South,Company_AA,Coffee,P-CO1,4360.13,1/15/2021,21,159,123
+Robert Zare,East,Company_J,Coffee,P-CO1,8434.16,4/11/2021,15,162,29
+Michael Neipper Smith,North,Company_L,Coffee,P-CO1,4876.16,1/22/2021,18,164,115
+Michael Neipper Smith,North,Company_L,Coffee,P-CO1,5090.16,2/3/2021,4,166,108
+Robert Zare,East,Company_J,Coffee,P-CO1,8296.14,5/24/2021,8,170,32
+Mariya Sergienko,North,Company_BB,Coffee,P-CO1,9826.17,3/10/2021,16,176,5
+Robert Zare,East,Company_J,Coffee,P-CO1,7516.15,5/24/2021,16,180,46
+Anne Hellung-Larsen,North,Company_I,Coffee,P-CO1,76.17,4/5/2021,11,187,206
+Nancy Freehafer,South,Company_Z,Coffee,P-CO1,2919.1,4/5/2021,15,195,149
+Mariya Sergienko,North,Company_BB,Coffee,P-CO1,8264.15,4/7/2021,21,197,33
+Laura Giussani,East,Company_C,Coffee,P-CO1,2331.18,4/25/2021,6,205,160
+Anne Hellung-Larsen,North,Company_F,Coffee,P-CO1,38000.16,5/4/2021,9,208,1
+Jan Kotas,South,Company_H,Tea,P-T2,5.56,1/1/2020,4,1,208
+Mariya Sergienko,North,Company_D,Tea,P-T2,6183.11,2/20/2020,16,2,78
+Mariya Sergienko,North,Company_D,Tea,P-T2,5312.15,4/14/2020,8,4,99
+Mariya Sergienko,North,Company_CC,Tea,P-T2,3222.12,9/12/2020,10,9,144
+Nancy Freehafer,South,Company_Z,Tea,P-T2,5171.15,12/25/2020,9,12,105
+Laura Giussani,East,Company_C,Tea,P-T2,6093.12,1/6/2021,7,13,81
+Maria Jones,West,Company_AA,Tea,P-T2,48000.33,1/15/2021,5,17,1
+Mariya Sergienko,North,Company_D,Tea,P-T2,7101.13,1/20/2021,19,18,53
+Michael Neipper Smith,North,Company_L,Tea,P-T2,5416.19,1/22/2021,18,21,96
+Anne Hellung-Larsen,North,Company_F,Tea,P-T2,8584.16,2/4/2021,11,24,28
+Laura Giussani,East,Company_C,Tea,P-T2,1041.19,2/23/2021,3,30,180
+Mariya Sergienko,North,Company_D,Tea,P-T2,3431.1,5/4/2021,15,36,135
+Jan Kotas,South,Company_H,Tea,P-T2,1964.16,3/22/2021,5,37,165
+Mariya Sergienko,North,Company_D,Tea,P-T2,6183.15,7/20/2021,17,38,77
+Mariya Sergienko,North,Company_D,Tea,P-T2,5312.12,12/5/2021,5,40,100
+Mariya Sergienko,North,Company_CC,Tea,P-T2,3222.16,4/5/2021,17,45,143
+Nancy Freehafer,South,Company_Z,Tea,P-T2,5171.2,4/5/2021,15,48,104
+Mariya Sergienko,North,Company_BB,Tea,P-T2,5142.13,4/7/2021,2,50,106
+Anne Hellung-Larsen,North,Company_F,Tea,P-T2,7737.13,4/8/2021,4,52,44
+Anne Hellung-Larsen,North,Company_Y,Tea,P-T2,3407.11,5/4/2021,18,62,138
+Mariya Sergienko,North,Company_D,Tea,P-T2,5431.11,4/22/2021,8,63,95
+Jan Kotas,South,Company_AA,Tea,P-T2,9379.13,5/6/2021,9,64,16
+Michael Neipper Smith,North,Company_L,Tea,P-T2,4458.19,5/6/2021,17,65,122
+Laura Giussani,East,Company_C,Tea,P-T2,30000.16,6/4/2021,10,73,3
+Anne Hellung-Larsen,North,Company_I,Tea,P-T2,8116.13,6/5/2021,16,74,36
+Anne Hellung-Larsen,North,Company_Y,Tea,P-T2,146.12,6/5/2021,6,75,204
+Michael Neipper Smith,North,Company_L,Tea,P-T2,6817.16,6/8/2021,17,81,63
+Mariya Sergienko,North,Company_D,Tea,P-T2,3798.15,9/16/2021,8,82,129
+Anne Hellung-Larsen,North,Company_F,Tea,P-T2,6955.2,6/23/2021,11,83,57
+Nancy Freehafer,South,Company_Z,Tea,P-T2,677.11,7/7/2021,1,85,189
+Michael Neipper Smith,North,Company_L,Tea,P-T2,8842.15,7/8/2021,17,86,22
+Mariya Sergienko,North,Company_BB,Tea,P-T2,5389.2,7/22/2021,17,93,97
+Laura Giussani,East,Company_C,Tea,P-T2,5770.19,7/23/2021,10,95,86
+Laura Giussani,East,Company_C,Tea,P-T2,2789.17,8/17/2021,10,100,150
+Nancy Freehafer,South,Company_Z,Tea,P-T2,3830.18,8/27/2021,14,103,128
+Anne Hellung-Larsen,North,Company_F,Tea,P-T2,9797.12,9/16/2021,3,109,7
+Anne Hellung-Larsen,North,Company_F,Tea,P-T2,423.15,10/5/2021,16,116,195
+Jan Kotas,South,Company_AA,Tea,P-T2,5675.13,10/5/2021,15,118,89
+Mariya Sergienko,North,Company_D,Tea,P-T2,1658.13,5/7/2021,4,123,170
+Mariya Sergienko,North,Company_D,Tea,P-T2,6599.16,8/6/2021,17,126,68
+Anne Hellung-Larsen,North,Company_F,Tea,P-T2,2756.14,10/25/2021,8,132,151
+Michael Neipper Smith,North,Company_L,Tea,P-T2,3233.15,10/30/2021,13,133,142
+Michael Neipper Smith,North,Company_L,Tea,P-T2,3279.13,11/14/2021,9,134,141
+Nancy Freehafer,South,Company_Z,Tea,P-T2,7363.17,11/24/2021,4,140,49
+Robert Zare,East,Company_J,Tea,P-T2,377.2,1/12/2021,19,144,199
+Robert Zare,East,Company_J,Tea,P-T2,9721.11,3/20/2021,10,146,8
+Nancy Freehafer,South,Company_Z,Tea,P-T2,855.13,12/14/2021,11,149,183
+Robert Zare,East,Company_J,Tea,P-T2,8336.18,3/24/2021,12,150,30
+Anne Hellung-Larsen,North,Company_F,Tea,P-T2,3473.19,12/23/2021,4,151,133
+Nancy Freehafer,South,Company_Z,Tea,P-T2,8031.14,1/6/2021,15,155,37
+Anne Hellung-Larsen,North,Company_F,Tea,P-T2,6843.13,1/15/2021,7,157,62
+Jan Kotas,South,Company_AA,Tea,P-T2,5116.14,1/15/2021,5,158,107
+Robert Zare,East,Company_J,Tea,P-T2,176.14,3/24/2021,12,160,203
+Michael Neipper Smith,North,Company_L,Tea,P-T2,8874.16,1/22/2021,17,163,21
+Nancy Freehafer,South,Company_Z,Tea,P-T2,5258.16,2/7/2021,4,168,102
+Jan Kotas,South,Company_AA,Tea,P-T2,9379.16,2/16/2021,8,171,14
+Laura Giussani,East,Company_C,Tea,P-T2,7742.15,2/23/2021,3,173,43
+Nancy Freehafer,South,Company_Z,Tea,P-T2,1844.13,3/14/2021,16,177,166
+Robert Zare,East,Company_J,Tea,P-T2,793.14,5/30/2021,6,182,184
+Robert Zare,East,Company_J,Tea,P-T2,5753.18,6/11/2021,4,184,87
+Anne Hellung-Larsen,North,Company_Y,Tea,P-T2,275.17,4/5/2021,16,189,200
+Mariya Sergienko,North,Company_CC,Tea,P-T2,2197.1,4/5/2021,10,192,161
+Nancy Freehafer,South,Company_Z,Tea,P-T2,5851.16,4/5/2021,1,194,84
+Mariya Sergienko,North,Company_BB,Tea,P-T2,3109.11,4/7/2021,7,196,147
+Anne Hellung-Larsen,North,Company_F,Tea,P-T2,894.16,4/8/2021,6,198,181
+Robert Zare,East,Company_J,Tea,P-T2,9506.17,7/22/2021,20,200,11
+Michael Neipper Smith,North,Company_L,Tea,P-T2,863.17,4/15/2021,5,202,182
