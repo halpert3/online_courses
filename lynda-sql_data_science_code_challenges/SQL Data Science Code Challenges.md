@@ -6,7 +6,7 @@ Database: Postgresql (downloaded on laptop)
 
 pgAdmin , Pass: I--v---3
 
-
+# SQL Fundamentals
 
 ## Challenge 1
 
@@ -71,5 +71,78 @@ SELECT GENDER,
 FROM "FansPerGenderAge"
 WHERE date = '2018-10-16'
 GROUP BY GENDER
+```
+
+# SQL Joins
+
+## Inner Joins
+
+Find the top ten countries with highest penetration
+
+- Penetration ratio is defined as number of fans/population
+- Join FansPerCountry and PopStats tables on country code
+- Extract data from latest date (2018-10-16)
+- Order it and limit 10
+
+```sql
+SELECT DISTINCT P.COUNTRY_NAME,
+	F."NumberOfFans",
+	P.POPULATION,
+	ROUND((F."NumberOfFans" * 100.0)/ P.POPULATION, 2) AS RATIO
+FROM "PopStats" AS P
+JOIN "FansPerCountry" AS F 
+ON F."CountryCode" = P.COUNTRY_CODE
+WHERE F."Date" = '2018-10-16'
+ORDER BY RATIO DESC
+LIMIT 10
+```
+
+## Outer and Cross Joins
+
+Find bottom ten countries that have large populations but lowest number of fans
+
+We're only looking at countries with 20,000,000 pop
+
+- Join FansPerCountry and PopStats tables on country code
+- Extract data from latest date (2018-10-16)
+- Order by number of fans
+- Only 10 rows
+
+```sql
+SELECT DISTINCT P.COUNTRY_NAME,
+	F."NumberOfFans",
+	P.POPULATION,
+	ROUND((F."NumberOfFans" * 10000000.0) / P.POPULATION,
+		2) AS RATIO
+FROM "PopStats" AS P
+JOIN "FansPerCountry" AS F 
+ON F."CountryCode" = P.COUNTRY_CODE
+WHERE F."Date" =
+		(SELECT MAX("Date")
+			FROM "FansPerCountry")
+	AND P.POPULATION >= 20000000
+ORDER BY F."NumberOfFans"
+LIMIT 10
+```
+
+## Set theory for SQL Joins
+
+Find the top cities and countries with highest number of fans
+
+* Use JOIN to extract number of fans and country names
+* Group by both city and country names 
+* Order by number of fans after aggreration 
+* Limit 10
+
+```sql
+SELECT CITY,
+	COUNTRY_NAME,
+	SUM(NUMBER_OF_FANS) AS TOTAL_FANS
+FROM "FansPerCity" AS FPC
+JOIN "PopStats" AS POP 
+ON POP.COUNTRY_CODE = FPC.COUNTRY_CODE
+GROUP BY city, country_name
+ORDER BY TOTAL_FANS DESC
+LIMIT 10
 ```
 
